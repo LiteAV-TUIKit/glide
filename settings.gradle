@@ -1,0 +1,7 @@
+exec {
+    commandLine "git", "submodule", "update", "--init", "--recursive"
+    ignoreExitValue true
+}
+include ':library'
+
+rootProject.name = 'glide-parent'
